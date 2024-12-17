@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .d1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .d2 {
+            border: 1px solid black;
+            width: 50%;
+            max-width: 600px;
+            background-color: aqua;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .inp {
+            height: 40px;
+            width: 100%;
+            border-radius: 7px;
+            padding-left: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .bnt1, .bnt2 {
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            color: #ccc;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .bnt1 {
+            background-color: red;
+            margin-right: 20px;
+            width: 100px;
+        }
+
+        .bnt2 {
+            background-color: green;
+            width: 100px;
+        }
+
+        .bnt1:hover {
+            background-color: darkred;
+        }
+
+        .bnt2:hover {
+            background-color: darkgreen;
+        }
+
+        #s-btn {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .d2 {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <div class="d2">
+            <form action="" method="post">
+                <input type="text" name="" class="inp" placeholder="Enter Your Name">
+                <input type="password" name="" class="inp" placeholder="Enter Your Password">
+                <button type="reset" class="bnt1">Reset</button>
+                <button type="submit" class="bnt2">
+                    <a href="index.html" id="s-btn">Submit
+                        </a>
+                    </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
